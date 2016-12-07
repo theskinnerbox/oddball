@@ -9,7 +9,8 @@
 #import "ERPNetworkConnection.h"
 #include <netdb.h>
 
-static const CGFloat kBeatDurationSeconds = 0.2;
+
+//static const CGFloat kBeatDurationSeconds = 0.2;
 
 @interface ERPNetworkConnection ()
 
