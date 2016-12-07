@@ -8,6 +8,7 @@
 
 #import "ToneGenerator.h"
 #import <AudioToolbox/AudioToolbox.h>
+#import <AVFoundation/AVAudioSession.h>
 
 OSStatus RenderTone(
                     void *inRefCon,
@@ -56,6 +57,8 @@ void ToneInterruptionListener(void *inClientData, UInt32 inInterruptionState)
 	
 	[viewController stop];
 }
+
+
 
 @implementation ToneGenerator
 
@@ -147,18 +150,46 @@ void ToneInterruptionListener(void *inClientData, UInt32 inInterruptionState)
 	}
 }
 
+- (void)audioSessionDidChangeInterruptionType:(NSNotification *)notification
+{
+    AVAudioSessionInterruptionType interruptionType = [[[notification userInfo]
+                                                        objectForKey:AVAudioSessionInterruptionTypeKey] unsignedIntegerValue];
+    if (AVAudioSessionInterruptionTypeBegan == interruptionType)
+    {
+    }
+    else if (AVAudioSessionInterruptionTypeEnded == interruptionType)
+    {
+    }
+}
+
 -(id)init {
     self = [super init];
     
     sampleRate = 44100;
     
-	OSStatus result = AudioSessionInitialize(NULL, NULL, ToneInterruptionListener, (__bridge void *)(self));
-	if (result == kAudioSessionNoError)
-	{
-		UInt32 sessionCategory = kAudioSessionCategory_MediaPlayback;
-		AudioSessionSetProperty(kAudioSessionProperty_AudioCategory, sizeof(sessionCategory), &sessionCategory);
-	}
-	AudioSessionSetActive(true);
+    // New implementation
+    AVAudioSession *session = [AVAudioSession sharedInstance];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(audioSessionDidChangeInterruptionType:)
+                                                 name:AVAudioSessionInterruptionNotification object:session];
+    NSError *setCategoryError = nil;
+    if (![session setCategory:AVAudioSessionCategoryPlayback
+                  withOptions:AVAudioSessionCategoryOptionMixWithOthers
+                        error:&setCategoryError]) {
+        // handle error
+    }
+    NSError *error = nil;
+    [session setActive:YES error:&error];
+    
+
+// Old implementation
+//    OSStatus result = AudioSessionInitialize(NULL, NULL, ToneInterruptionListener, (__bridge void *)(self));
+//
+//	if (result == kAudioSessionNoError)
+//	{
+//		UInt32 sessionCategory = kAudioSessionCategory_MediaPlayback;
+//		AudioSessionSetProperty(kAudioSessionProperty_AudioCategory, sizeof(sessionCategory), &sessionCategory);
+//	}
+//	AudioSessionSetActive(true);
     
     return self;
 }

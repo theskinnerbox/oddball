@@ -16,7 +16,8 @@
     
     // Set AudioSession
     NSError *sessionError = nil;
-    [[AVAudioSession sharedInstance] setDelegate:self];
+    [[AVAudioSession sharedInstance] setActive:YES error:nil];
+//    [[AVAudioSession sharedInstance] setDelegate:self];
     [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayAndRecord error:&sessionError];
     
     /* Pick any one of them */
@@ -25,8 +26,15 @@
     //AudioSessionSetProperty(kAudioSessionProperty_OverrideAudioRoute, sizeof(audioRouteOverride), &audioRouteOverride);
     
     // 2. Changing the default output audio route
-    UInt32 doChangeDefaultRoute = 1;
-    AudioSessionSetProperty(kAudioSessionProperty_OverrideCategoryDefaultToSpeaker, sizeof(doChangeDefaultRoute), &doChangeDefaultRoute);
+    NSError *overrideError = nil;
+    BOOL success = [[AVAudioSession sharedInstance] overrideOutputAudioPort:AVAudioSessionPortOverrideSpeaker error:&overrideError];
+    if(!success)
+    {
+        NSLog(@"error doing outputaudioportoverride - %@", [overrideError localizedDescription]);
+    }
+    
+    //UInt32 doChangeDefaultRoute = 1;
+    //AudioSessionSetProperty(kAudioSessionProperty_OverrideCategoryDefaultToSpeaker, sizeof(doChangeDefaultRoute), &doChangeDefaultRoute);
     
     return YES;
 }

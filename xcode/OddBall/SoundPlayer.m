@@ -76,7 +76,8 @@
 	soundFileURL = newURL;
     
 	// Registers this class as the delegate of the audio session.
-	[[AVAudioSession sharedInstance] setDelegate: self];
+    [[AVAudioSession sharedInstance] setActive:YES error:nil];
+	//[[AVAudioSession sharedInstance] setDelegate: self];
 	
 	// Activates the audio session.
 	NSError *activationError = nil;
