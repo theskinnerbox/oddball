@@ -3,8 +3,11 @@ The oddball paradigm is an experimental design used within psychology research. 
 
 # Credits
 This project has been developed with the funding of CRA-ING.
+
 Project lead by Ergoproject Srl.
+
 Scientific supervisor: Francesco Di Nocera.
+
 Software Engineer: Claudio Capobianco.
 
 # Features
