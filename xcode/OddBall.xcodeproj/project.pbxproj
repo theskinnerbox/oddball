@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B18DAEA174CBB7000DE1D2E /* ERPSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B18DAE9174CBB7000DE1D2E /* ERPSettingsViewController.m */; };
+		0B561C9B17784D9400225DE8 /* ERPMonitorSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B561C9A17784D9400225DE8 /* ERPMonitorSession.m */; };
+		0B5FDB63182A528C00E5E787 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B5FDB62182A528C00E5E787 /* XCTest.framework */; };
+		0B5FDB64182A528C00E5E787 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BBFC0EB171C96BA0083F0EA /* Foundation.framework */; };
+		0B5FDB65182A528C00E5E787 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BBFC0E9171C96BA0083F0EA /* UIKit.framework */; };
+		0B5FDB6B182A528C00E5E787 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0B5FDB69182A528C00E5E787 /* InfoPlist.strings */; };
+		0B5FDB6D182A528C00E5E787 /* OddBall_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B5FDB6C182A528C00E5E787 /* OddBall_Tests.m */; };
+		0B865D7F174BAB9100B5964B /* icona.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B865D7E174BAB9100B5964B /* icona.png */; };
+		0B865D81174BDDB100B5964B /* icona-retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B865D80174BDDB100B5964B /* icona-retina.png */; };
+		0B8B5C851755EE5100A66242 /* ERPFileSharing.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B8B5C841755EE5100A66242 /* ERPFileSharing.m */; };
+		0B92A76217426FCE0003478A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B92A76117426FCE0003478A /* AVFoundation.framework */; };
+		0BA3E0CC18BC90510012DB17 /* ERPNetworkConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BA3E0CB18BC90510012DB17 /* ERPNetworkConnection.m */; };
+		0BA3E0CF18BC94810012DB17 /* UDPEcho.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BA3E0CE18BC94810012DB17 /* UDPEcho.m */; };
+		0BA3E0D318BC99CE0012DB17 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BA3E0D218BC99CE0012DB17 /* CFNetwork.framework */; };
+		0BBFC0EA171C96BA0083F0EA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BBFC0E9171C96BA0083F0EA /* UIKit.framework */; };
+		0BBFC0EC171C96BA0083F0EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BBFC0EB171C96BA0083F0EA /* Foundation.framework */; };
+		0BBFC0EE171C96BA0083F0EA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BBFC0ED171C96BA0083F0EA /* CoreGraphics.framework */; };
+		0BBFC0F4171C96BA0083F0EA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0BBFC0F2171C96BA0083F0EA /* InfoPlist.strings */; };
+		0BBFC0F6171C96BA0083F0EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BBFC0F5171C96BA0083F0EA /* main.m */; };
+		0BBFC0FA171C96BA0083F0EA /* ERPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BBFC0F9171C96BA0083F0EA /* ERPAppDelegate.m */; };
+		0BBFC0FC171C96BA0083F0EA /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BBFC0FB171C96BA0083F0EA /* Default.png */; };
+		0BBFC0FE171C96BA0083F0EA /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BBFC0FD171C96BA0083F0EA /* Default@2x.png */; };
+		0BBFC100171C96BB0083F0EA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BBFC0FF171C96BB0083F0EA /* Default-568h@2x.png */; };
+		0BBFC103171C96BB0083F0EA /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BBFC101171C96BB0083F0EA /* MainStoryboard.storyboard */; };
+		0BBFC106171C96BB0083F0EA /* ERPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BBFC105171C96BB0083F0EA /* ERPViewController.m */; };
+		0BDC03811746D5F9004F4C5F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BDC03801746D5F9004F4C5F /* AudioToolbox.framework */; };
+		0BDC03821746D8DF004F4C5F /* ToneGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDC037F1746D5C2004F4C5F /* ToneGenerator.m */; };
+		0BDC039017497840004F4C5F /* SoundPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDC038F17497840004F4C5F /* SoundPlayer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0B5FDB6F182A528C00E5E787 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BBFC0DE171C96BA0083F0EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0BBFC0E5171C96BA0083F0EA;
+			remoteInfo = OddBall;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B18DAE8174CBB7000DE1D2E /* ERPSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ERPSettingsViewController.h; sourceTree = "<group>"; };
+		0B18DAE9174CBB7000DE1D2E /* ERPSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ERPSettingsViewController.m; sourceTree = "<group>"; };
+		0B561C9917784D9400225DE8 /* ERPMonitorSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ERPMonitorSession.h; sourceTree = "<group>"; };
+		0B561C9A17784D9400225DE8 /* ERPMonitorSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ERPMonitorSession.m; sourceTree = "<group>"; };
+		0B56421B18757C88007DAEF6 /* BluetoothManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BluetoothManager.framework; path = System/Library/PrivateFrameworks/BluetoothManager.framework; sourceTree = SDKROOT; };
+		0B5FDB61182A528C00E5E787 /* OddBall Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OddBall Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B5FDB62182A528C00E5E787 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		0B5FDB68182A528C00E5E787 /* OddBall Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OddBall Tests-Info.plist"; sourceTree = "<group>"; };
+		0B5FDB6A182A528C00E5E787 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0B5FDB6C182A528C00E5E787 /* OddBall_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OddBall_Tests.m; sourceTree = "<group>"; };
+		0B5FDB6E182A528C00E5E787 /* OddBall Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OddBall Tests-Prefix.pch"; sourceTree = "<group>"; };
+		0B865D7E174BAB9100B5964B /* icona.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icona.png; sourceTree = "<group>"; };
+		0B865D80174BDDB100B5964B /* icona-retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icona-retina.png"; sourceTree = "<group>"; };
+		0B8B5C831755EE5100A66242 /* ERPFileSharing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ERPFileSharing.h; sourceTree = "<group>"; };
+		0B8B5C841755EE5100A66242 /* ERPFileSharing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ERPFileSharing.m; sourceTree = "<group>"; };
+		0B92A76117426FCE0003478A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		0BA3E0CA18BC90510012DB17 /* ERPNetworkConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ERPNetworkConnection.h; sourceTree = "<group>"; };
+		0BA3E0CB18BC90510012DB17 /* ERPNetworkConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ERPNetworkConnection.m; sourceTree = "<group>"; };
+		0BA3E0CD18BC94810012DB17 /* UDPEcho.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UDPEcho.h; sourceTree = "<group>"; };
+		0BA3E0CE18BC94810012DB17 /* UDPEcho.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UDPEcho.m; sourceTree = "<group>"; };
+		0BA3E0D018BC98E40012DB17 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		0BA3E0D218BC99CE0012DB17 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		0BBFC0E6171C96BA0083F0EA /* OddBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OddBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BBFC0E9171C96BA0083F0EA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0BBFC0EB171C96BA0083F0EA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0BBFC0ED171C96BA0083F0EA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0BBFC0F1171C96BA0083F0EA /* OddBall-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OddBall-Info.plist"; sourceTree = "<group>"; };
+		0BBFC0F3171C96BA0083F0EA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0BBFC0F5171C96BA0083F0EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0BBFC0F7171C96BA0083F0EA /* OddBall-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OddBall-Prefix.pch"; sourceTree = "<group>"; };
+		0BBFC0F8171C96BA0083F0EA /* ERPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ERPAppDelegate.h; sourceTree = "<group>"; };
+		0BBFC0F9171C96BA0083F0EA /* ERPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ERPAppDelegate.m; sourceTree = "<group>"; };
+		0BBFC0FB171C96BA0083F0EA /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		0BBFC0FD171C96BA0083F0EA /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		0BBFC0FF171C96BB0083F0EA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		0BBFC102171C96BB0083F0EA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		0BBFC104171C96BB0083F0EA /* ERPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ERPViewController.h; sourceTree = "<group>"; };
+		0BBFC105171C96BB0083F0EA /* ERPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ERPViewController.m; sourceTree = "<group>"; };
+		0BDC037E1746D5C2004F4C5F /* ToneGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToneGenerator.h; sourceTree = "<group>"; };
+		0BDC037F1746D5C2004F4C5F /* ToneGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToneGenerator.m; sourceTree = "<group>"; };
+		0BDC03801746D5F9004F4C5F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		0BDC038E17497840004F4C5F /* SoundPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundPlayer.h; sourceTree = "<group>"; };
+		0BDC038F17497840004F4C5F /* SoundPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundPlayer.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0B5FDB5E182A528C00E5E787 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B5FDB63182A528C00E5E787 /* XCTest.framework in Frameworks */,
+				0B5FDB65182A528C00E5E787 /* UIKit.framework in Frameworks */,
+				0B5FDB64182A528C00E5E787 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BBFC0E3171C96BA0083F0EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BA3E0D318BC99CE0012DB17 /* CFNetwork.framework in Frameworks */,
+				0BDC03811746D5F9004F4C5F /* AudioToolbox.framework in Frameworks */,
+				0B92A76217426FCE0003478A /* AVFoundation.framework in Frameworks */,
+				0BBFC0EA171C96BA0083F0EA /* UIKit.framework in Frameworks */,
+				0BBFC0EC171C96BA0083F0EA /* Foundation.framework in Frameworks */,
+				0BBFC0EE171C96BA0083F0EA /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B5FDB66182A528C00E5E787 /* OddBall Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0B5FDB6C182A528C00E5E787 /* OddBall_Tests.m */,
+				0B5FDB67182A528C00E5E787 /* Supporting Files */,
+			);
+			path = "OddBall Tests";
+			sourceTree = "<group>";
+		};
+		0B5FDB67182A528C00E5E787 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0B5FDB68182A528C00E5E787 /* OddBall Tests-Info.plist */,
+				0B5FDB69182A528C00E5E787 /* InfoPlist.strings */,
+				0B5FDB6E182A528C00E5E787 /* OddBall Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0BA3E0C918BC90220012DB17 /* devices */ = {
+			isa = PBXGroup;
+			children = (
+				0BA3E0CD18BC94810012DB17 /* UDPEcho.h */,
+				0BA3E0CE18BC94810012DB17 /* UDPEcho.m */,
+				0BA3E0CA18BC90510012DB17 /* ERPNetworkConnection.h */,
+				0BA3E0CB18BC90510012DB17 /* ERPNetworkConnection.m */,
+			);
+			name = devices;
+			sourceTree = "<group>";
+		};
+		0BBFC0DD171C96BA0083F0EA = {
+			isa = PBXGroup;
+			children = (
+				0B865D80174BDDB100B5964B /* icona-retina.png */,
+				0B865D7E174BAB9100B5964B /* icona.png */,
+				0BBFC0EF171C96BA0083F0EA /* OddBall */,
+				0B5FDB66182A528C00E5E787 /* OddBall Tests */,
+				0BBFC0E8171C96BA0083F0EA /* Frameworks */,
+				0BBFC0E7171C96BA0083F0EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0BBFC0E7171C96BA0083F0EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0BBFC0E6171C96BA0083F0EA /* OddBall.app */,
+				0B5FDB61182A528C00E5E787 /* OddBall Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0BBFC0E8171C96BA0083F0EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0BA3E0D218BC99CE0012DB17 /* CFNetwork.framework */,
+				0BA3E0D018BC98E40012DB17 /* MobileCoreServices.framework */,
+				0B56421B18757C88007DAEF6 /* BluetoothManager.framework */,
+				0BDC03801746D5F9004F4C5F /* AudioToolbox.framework */,
+				0B92A76117426FCE0003478A /* AVFoundation.framework */,
+				0BBFC0E9171C96BA0083F0EA /* UIKit.framework */,
+				0BBFC0EB171C96BA0083F0EA /* Foundation.framework */,
+				0BBFC0ED171C96BA0083F0EA /* CoreGraphics.framework */,
+				0B5FDB62182A528C00E5E787 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0BBFC0EF171C96BA0083F0EA /* OddBall */ = {
+			isa = PBXGroup;
+			children = (
+				0BA3E0C918BC90220012DB17 /* devices */,
+				0BDC037E1746D5C2004F4C5F /* ToneGenerator.h */,
+				0BDC037F1746D5C2004F4C5F /* ToneGenerator.m */,
+				0BBFC0F8171C96BA0083F0EA /* ERPAppDelegate.h */,
+				0BBFC0F9171C96BA0083F0EA /* ERPAppDelegate.m */,
+				0BBFC101171C96BB0083F0EA /* MainStoryboard.storyboard */,
+				0BBFC104171C96BB0083F0EA /* ERPViewController.h */,
+				0BBFC105171C96BB0083F0EA /* ERPViewController.m */,
+				0BBFC0F0171C96BA0083F0EA /* Supporting Files */,
+				0BDC038E17497840004F4C5F /* SoundPlayer.h */,
+				0BDC038F17497840004F4C5F /* SoundPlayer.m */,
+				0B18DAE8174CBB7000DE1D2E /* ERPSettingsViewController.h */,
+				0B18DAE9174CBB7000DE1D2E /* ERPSettingsViewController.m */,
+				0B8B5C831755EE5100A66242 /* ERPFileSharing.h */,
+				0B8B5C841755EE5100A66242 /* ERPFileSharing.m */,
+				0B561C9917784D9400225DE8 /* ERPMonitorSession.h */,
+				0B561C9A17784D9400225DE8 /* ERPMonitorSession.m */,
+			);
+			path = OddBall;
+			sourceTree = "<group>";
+		};
+		0BBFC0F0171C96BA0083F0EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0BBFC0F1171C96BA0083F0EA /* OddBall-Info.plist */,
+				0BBFC0F2171C96BA0083F0EA /* InfoPlist.strings */,
+				0BBFC0F5171C96BA0083F0EA /* main.m */,
+				0BBFC0F7171C96BA0083F0EA /* OddBall-Prefix.pch */,
+				0BBFC0FB171C96BA0083F0EA /* Default.png */,
+				0BBFC0FD171C96BA0083F0EA /* Default@2x.png */,
+				0BBFC0FF171C96BB0083F0EA /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0B5FDB60182A528C00E5E787 /* OddBall Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B5FDB73182A528C00E5E787 /* Build configuration list for PBXNativeTarget "OddBall Tests" */;
+			buildPhases = (
+				0B5FDB5D182A528C00E5E787 /* Sources */,
+				0B5FDB5E182A528C00E5E787 /* Frameworks */,
+				0B5FDB5F182A528C00E5E787 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B5FDB70182A528C00E5E787 /* PBXTargetDependency */,
+			);
+			name = "OddBall Tests";
+			productName = "OddBall Tests";
+			productReference = 0B5FDB61182A528C00E5E787 /* OddBall Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0BBFC0E5171C96BA0083F0EA /* OddBall */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BBFC109171C96BB0083F0EA /* Build configuration list for PBXNativeTarget "OddBall" */;
+			buildPhases = (
+				0BBFC0E2171C96BA0083F0EA /* Sources */,
+				0BBFC0E3171C96BA0083F0EA /* Frameworks */,
+				0BBFC0E4171C96BA0083F0EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OddBall;
+			productName = OddBall;
+			productReference = 0BBFC0E6171C96BA0083F0EA /* OddBall.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0BBFC0DE171C96BA0083F0EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ERP;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = claudio;
+				TargetAttributes = {
+					0B5FDB60182A528C00E5E787 = {
+						TestTargetID = 0BBFC0E5171C96BA0083F0EA;
+					};
+					0BBFC0E5171C96BA0083F0EA = {
+						DevelopmentTeam = JY2R2Q54VM;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 0BBFC0E1171C96BA0083F0EA /* Build configuration list for PBXProject "OddBall" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0BBFC0DD171C96BA0083F0EA;
+			productRefGroup = 0BBFC0E7171C96BA0083F0EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0BBFC0E5171C96BA0083F0EA /* OddBall */,
+				0B5FDB60182A528C00E5E787 /* OddBall Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0B5FDB5F182A528C00E5E787 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B5FDB6B182A528C00E5E787 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BBFC0E4171C96BA0083F0EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BBFC0F4171C96BA0083F0EA /* InfoPlist.strings in Resources */,
+				0BBFC0FC171C96BA0083F0EA /* Default.png in Resources */,
+				0BBFC0FE171C96BA0083F0EA /* Default@2x.png in Resources */,
+				0BBFC100171C96BB0083F0EA /* Default-568h@2x.png in Resources */,
+				0BBFC103171C96BB0083F0EA /* MainStoryboard.storyboard in Resources */,
+				0B865D7F174BAB9100B5964B /* icona.png in Resources */,
+				0B865D81174BDDB100B5964B /* icona-retina.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0B5FDB5D182A528C00E5E787 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B5FDB6D182A528C00E5E787 /* OddBall_Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BBFC0E2171C96BA0083F0EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BDC03821746D8DF004F4C5F /* ToneGenerator.m in Sources */,
+				0BBFC0F6171C96BA0083F0EA /* main.m in Sources */,
+				0BA3E0CF18BC94810012DB17 /* UDPEcho.m in Sources */,
+				0BBFC0FA171C96BA0083F0EA /* ERPAppDelegate.m in Sources */,
+				0BBFC106171C96BB0083F0EA /* ERPViewController.m in Sources */,
+				0BA3E0CC18BC90510012DB17 /* ERPNetworkConnection.m in Sources */,
+				0BDC039017497840004F4C5F /* SoundPlayer.m in Sources */,
+				0B18DAEA174CBB7000DE1D2E /* ERPSettingsViewController.m in Sources */,
+				0B8B5C851755EE5100A66242 /* ERPFileSharing.m in Sources */,
+				0B561C9B17784D9400225DE8 /* ERPMonitorSession.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0B5FDB70182A528C00E5E787 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0BBFC0E5171C96BA0083F0EA /* OddBall */;
+			targetProxy = 0B5FDB6F182A528C00E5E787 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0B5FDB69182A528C00E5E787 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B5FDB6A182A528C00E5E787 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0BBFC0F2171C96BA0083F0EA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0BBFC0F3171C96BA0083F0EA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0BBFC101171C96BB0083F0EA /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0BBFC102171C96BB0083F0EA /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0B5FDB71182A528C00E5E787 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OddBall.app/OddBall";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OddBall Tests/OddBall Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "OddBall Tests/OddBall Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		0B5FDB72182A528C00E5E787 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OddBall.app/OddBall";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OddBall Tests/OddBall Tests-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "OddBall Tests/OddBall Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		0BBFC107171C96BB0083F0EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "1CFF8CE8-081E-41C9-9B0E-0A95F34E29A5";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1CFF8CE8-081E-41C9-9B0E-0A95F34E29A5";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0BBFC108171C96BB0083F0EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "1CFF8CE8-081E-41C9-9B0E-0A95F34E29A5";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1CFF8CE8-081E-41C9-9B0E-0A95F34E29A5";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0BBFC10A171C96BB0083F0EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Claudio Capobianco (8X5SX66C54)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = JY2R2Q54VM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OddBall/OddBall-Prefix.pch";
+				INFOPLIST_FILE = "OddBall/OddBall-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2D43F579-65EC-4009-A229-557247760706";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0BBFC10B171C96BB0083F0EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Claudio Capobianco (8X5SX66C54)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = JY2R2Q54VM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OddBall/OddBall-Prefix.pch";
+				INFOPLIST_FILE = "OddBall/OddBall-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2D43F579-65EC-4009-A229-557247760706";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0B5FDB73182A528C00E5E787 /* Build configuration list for PBXNativeTarget "OddBall Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B5FDB71182A528C00E5E787 /* Debug */,
+				0B5FDB72182A528C00E5E787 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0BBFC0E1171C96BA0083F0EA /* Build configuration list for PBXProject "OddBall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BBFC107171C96BB0083F0EA /* Debug */,
+				0BBFC108171C96BB0083F0EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0BBFC109171C96BB0083F0EA /* Build configuration list for PBXNativeTarget "OddBall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BBFC10A171C96BB0083F0EA /* Debug */,
+				0BBFC10B171C96BB0083F0EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0BBFC0DE171C96BA0083F0EA /* Project object */;
+}
