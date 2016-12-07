@@ -18,3 +18,9 @@ User feedback may be provided by:
 
 You can use an Arduino Yun as remote device, using the sketch provided in the arduino folder.
 
+Output data is saved as csv, files can be saved to your computer using iTunes->Your Device->App and scrolling down to the File Sharing section.
+
+# Screenshots
+![](https://github.com/theskinnerbox/oddball/blob/develop/screenshots/iphone5-home-on.png)
+![](https://github.com/theskinnerbox/oddball/blob/develop/screenshots/iphone5-settings-1.png)
+![](https://github.com/theskinnerbox/oddball/blob/develop/screenshots/iphone5-settings-2.png)
