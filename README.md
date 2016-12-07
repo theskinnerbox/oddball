@@ -22,5 +22,5 @@ Output data is saved as csv, files can be saved to your computer using iTunes->Y
 
 # Screenshots
 ![](https://github.com/theskinnerbox/oddball/blob/develop/screenshots/iphone5-home-on-low.png)
-![](https://github.com/theskinnerbox/oddball/blob/develop/screenshots/iphone5-settings-1.png)
-![](https://github.com/theskinnerbox/oddball/blob/develop/screenshots/iphone5-settings-2.png)
+![](https://github.com/theskinnerbox/oddball/blob/develop/screenshots/iphone5-settings-1-low.png)
+![](https://github.com/theskinnerbox/oddball/blob/develop/screenshots/iphone5-settings-2-low.png)
