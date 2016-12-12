@@ -1,14 +1,8 @@
 # Oddball
 The oddball paradigm is an experimental design used within psychology research. Presentations of sequences of repetitive stimuli are infrequently interrupted by a deviant stimulus. The reaction of the participant to this "oddball" stimulus is recorded.
 
-# Credits
-This project has been developed with the funding of CRA-ING.
-
-Project lead by Ergoproject Srl.
-
-Scientific supervisor: Francesco Di Nocera.
-
-Software Engineer: Claudio Capobianco.
+# Acknowledgements
+The app was developed through the collaboration between Agricultural Research Council, Agricultural Engineering Research Unit (CRA-ING), Ergoproject Srl, and Department of Psychology, Sapienza University of Rome within the research project "INTRAC: a research project on the integration of safety elements with ergonomics in the design of agricultural machinery” funded by the Italian Ministry of Agriculture.
 
 # Features
 User feedback may be provided by:
