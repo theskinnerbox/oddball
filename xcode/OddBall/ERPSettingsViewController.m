@@ -8,7 +8,7 @@
 
 #import "ERPSettingsViewController.h"
 
-static const NSString* versionString = @"1.3";
+static const NSString* versionString = @"1.4";
 static const int toneSliderResolution = 50;
 
 @interface ERPSettingsViewController ()
