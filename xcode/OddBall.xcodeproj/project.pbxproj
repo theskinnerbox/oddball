@@ -14,8 +14,6 @@
 		0B5FDB65182A528C00E5E787 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BBFC0E9171C96BA0083F0EA /* UIKit.framework */; };
 		0B5FDB6B182A528C00E5E787 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0B5FDB69182A528C00E5E787 /* InfoPlist.strings */; };
 		0B5FDB6D182A528C00E5E787 /* OddBall_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B5FDB6C182A528C00E5E787 /* OddBall_Tests.m */; };
-		0B865D7F174BAB9100B5964B /* icona.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B865D7E174BAB9100B5964B /* icona.png */; };
-		0B865D81174BDDB100B5964B /* icona-retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B865D80174BDDB100B5964B /* icona-retina.png */; };
 		0B8B5C851755EE5100A66242 /* ERPFileSharing.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B8B5C841755EE5100A66242 /* ERPFileSharing.m */; };
 		0B92A76217426FCE0003478A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B92A76117426FCE0003478A /* AVFoundation.framework */; };
 		0BA3E0CC18BC90510012DB17 /* ERPNetworkConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BA3E0CB18BC90510012DB17 /* ERPNetworkConnection.m */; };
@@ -35,6 +33,8 @@
 		0BDC03811746D5F9004F4C5F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BDC03801746D5F9004F4C5F /* AudioToolbox.framework */; };
 		0BDC03821746D8DF004F4C5F /* ToneGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDC037F1746D5C2004F4C5F /* ToneGenerator.m */; };
 		0BDC039017497840004F4C5F /* SoundPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDC038F17497840004F4C5F /* SoundPlayer.m */; };
+		CAD528411E5F11890019AEFA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAD528401E5F11890019AEFA /* Images.xcassets */; };
+		CAD528431E6074D40019AEFA /* appicon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = CAD528421E6074D40019AEFA /* appicon-120.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,8 +59,6 @@
 		0B5FDB6A182A528C00E5E787 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0B5FDB6C182A528C00E5E787 /* OddBall_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OddBall_Tests.m; sourceTree = "<group>"; };
 		0B5FDB6E182A528C00E5E787 /* OddBall Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OddBall Tests-Prefix.pch"; sourceTree = "<group>"; };
-		0B865D7E174BAB9100B5964B /* icona.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icona.png; sourceTree = "<group>"; };
-		0B865D80174BDDB100B5964B /* icona-retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icona-retina.png"; sourceTree = "<group>"; };
 		0B8B5C831755EE5100A66242 /* ERPFileSharing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ERPFileSharing.h; sourceTree = "<group>"; };
 		0B8B5C841755EE5100A66242 /* ERPFileSharing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ERPFileSharing.m; sourceTree = "<group>"; };
 		0B92A76117426FCE0003478A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -91,6 +89,8 @@
 		0BDC03801746D5F9004F4C5F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		0BDC038E17497840004F4C5F /* SoundPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundPlayer.h; sourceTree = "<group>"; };
 		0BDC038F17497840004F4C5F /* SoundPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundPlayer.m; sourceTree = "<group>"; };
+		CAD528401E5F11890019AEFA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CAD528421E6074D40019AEFA /* appicon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "appicon-120.png"; path = "../../../../../appicon-120.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,8 +153,6 @@
 		0BBFC0DD171C96BA0083F0EA = {
 			isa = PBXGroup;
 			children = (
-				0B865D80174BDDB100B5964B /* icona-retina.png */,
-				0B865D7E174BAB9100B5964B /* icona.png */,
 				0BBFC0EF171C96BA0083F0EA /* OddBall */,
 				0B5FDB66182A528C00E5E787 /* OddBall Tests */,
 				0BBFC0E8171C96BA0083F0EA /* Frameworks */,
@@ -207,6 +205,7 @@
 				0B8B5C841755EE5100A66242 /* ERPFileSharing.m */,
 				0B561C9917784D9400225DE8 /* ERPMonitorSession.h */,
 				0B561C9A17784D9400225DE8 /* ERPMonitorSession.m */,
+				CAD528401E5F11890019AEFA /* Images.xcassets */,
 			);
 			path = OddBall;
 			sourceTree = "<group>";
@@ -214,6 +213,7 @@
 		0BBFC0F0171C96BA0083F0EA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CAD528421E6074D40019AEFA /* appicon-120.png */,
 				0BBFC0F1171C96BA0083F0EA /* OddBall-Info.plist */,
 				0BBFC0F2171C96BA0083F0EA /* InfoPlist.strings */,
 				0BBFC0F5171C96BA0083F0EA /* main.m */,
@@ -313,13 +313,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAD528431E6074D40019AEFA /* appicon-120.png in Resources */,
 				0BBFC0F4171C96BA0083F0EA /* InfoPlist.strings in Resources */,
+				CAD528411E5F11890019AEFA /* Images.xcassets in Resources */,
 				0BBFC0FC171C96BA0083F0EA /* Default.png in Resources */,
 				0BBFC0FE171C96BA0083F0EA /* Default@2x.png in Resources */,
 				0BBFC100171C96BB0083F0EA /* Default-568h@2x.png in Resources */,
 				0BBFC103171C96BB0083F0EA /* MainStoryboard.storyboard in Resources */,
-				0B865D7F174BAB9100B5964B /* icona.png in Resources */,
-				0B865D81174BDDB100B5964B /* icona-retina.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,7 +414,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = "OddBall Tests/OddBall Tests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "it.ergoproject.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wbigger.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -443,7 +443,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = "OddBall Tests/OddBall Tests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "it.ergoproject.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wbigger.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -534,6 +534,8 @@
 		0BBFC10A171C96BB0083F0EA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Claudio Capobianco (8X5SX66C54)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = JY2R2Q54VM;
@@ -544,10 +546,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OddBall/OddBall-Prefix.pch";
 				INFOPLIST_FILE = "OddBall/OddBall-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "it.ergoproject.${PRODUCT_NAME:rfc1034identifier}";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wbigger.oddball;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2D43F579-65EC-4009-A229-557247760706";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -555,6 +559,8 @@
 		0BBFC10B171C96BB0083F0EA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Claudio Capobianco (8X5SX66C54)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = JY2R2Q54VM;
@@ -565,10 +571,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OddBall/OddBall-Prefix.pch";
 				INFOPLIST_FILE = "OddBall/OddBall-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "it.ergoproject.${PRODUCT_NAME:rfc1034identifier}";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wbigger.oddball;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2D43F579-65EC-4009-A229-557247760706";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
