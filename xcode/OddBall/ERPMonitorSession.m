@@ -142,7 +142,7 @@
 }
 
 -(void)playBeat {
-    int rand = arc4random() % 100;
+    int rand = arc4random_uniform(100);
     if (rand < rareCommonRate) {
         tonegen->frequency = rareFreq;
         lastRareTime = [[NSDate alloc] init];
@@ -161,11 +161,11 @@
 
     if (audioBPM > 0) {
         //iis: intervallo inter stimolo
-        int sign = 1 - 2 * (arc4random() % 2);
+        int sign = 1 - 2 * (arc4random_uniform(2));
         int bpmVariability = (int)round(audioBPMVariability);
         CGFloat randBPM = 0;
         if (bpmVariability > 0) {
-            randBPM = (float)((float)(arc4random() % bpmVariability) * (float)sign);
+            randBPM = (float)((float)(arc4random_uniform(bpmVariability)) * (float)sign);
         }
         CGFloat periodDurationSeconds =  (60/audioBPM * (1 + randBPM/100));
         NSLog(@"sign: %d, bpmvar %d, randbpm: %f, iis: %f",sign, bpmVariability,randBPM, periodDurationSeconds);
