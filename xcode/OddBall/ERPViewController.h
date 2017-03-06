@@ -32,7 +32,7 @@
 @property CGFloat rareCommonRate;
 @property CGFloat beatDurationSeconds;
 @property BOOL useTouchscreenButton;
-@property NSUInteger pedalPort;
+@property NSUInteger extTriggerPort;
 @property BOOL showTriggerInput;
 
 @property BOOL enableSettingChange;

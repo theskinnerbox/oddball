@@ -12,7 +12,7 @@
 #import "ERPNetworkConnection.h"
 
 static const CGFloat kBeatDurationSeconds = 0.2;
-static const NSUInteger kPedalPort = 9090;
+static const NSUInteger kExtTriggerPort = 9090;
 static NSString* kAlertSessionTitle = @"Start new session";
 static NSString* kAlertButtonTitle = @"Button disabled";
 
@@ -51,7 +51,7 @@ static NSString* kAlertButtonTitle = @"Button disabled";
 @synthesize rareCommonRate;
 @synthesize beatDurationSeconds;
 @synthesize useTouchscreenButton;
-@synthesize pedalPort;
+@synthesize extTriggerPort;
 @synthesize enableSettingChange;
 @synthesize showTriggerInput;
 
@@ -114,7 +114,7 @@ static NSString* kAlertButtonTitle = @"Button disabled";
     rareCommonRate = 25;
     beatDurationSeconds = kBeatDurationSeconds;
     useTouchscreenButton = false;
-    pedalPort = kPedalPort;
+    extTriggerPort = kExtTriggerPort;
     enableSettingChange = YES;
     showTriggerInput = NO;
     
@@ -133,7 +133,7 @@ static NSString* kAlertButtonTitle = @"Button disabled";
     
     
     // UDP connection to devices (e.g. pedal)
-    netObj = [[ERPNetworkConnection alloc] initWithPort:pedalPort];
+    netObj = [[ERPNetworkConnection alloc] initWithPort:extTriggerPort];
     assert(netObj != nil);
     netObj.delegate = self;
     [netObj start];
@@ -544,7 +544,7 @@ static NSString* kAlertButtonTitle = @"Button disabled";
     const char* b = [data bytes];
     if (b != nil) {
         if (b[0] == 'p') {
-            [self updateClickFromSource:@"pedal"];
+            [self updateClickFromSource:@"extTrig"];
         } else {
             [self updateHeartbeatCounterLabel];
         }
