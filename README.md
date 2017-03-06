@@ -23,3 +23,6 @@ Setting screens
 
 ![](https://github.com/theskinnerbox/oddball/blob/develop/screenshots/iphone5-settings-1-low.png)
 ![](https://github.com/theskinnerbox/oddball/blob/develop/screenshots/iphone5-settings-2-low.png)
+
+# Arduino
+![](https://github.com/theskinnerbox/oddball/blob/develop/screenshots/remote-switch_bb.png)
