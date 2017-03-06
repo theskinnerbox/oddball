@@ -21,7 +21,7 @@
 @property CGFloat rareCommonRate;
 @property CGFloat beatDurationSeconds;
 @property BOOL useTouchscreenButton;
-@property NSUInteger pedalPort;
+@property NSUInteger extTriggerPort;
 @property BOOL showTriggerInput;
 @property BOOL enableSettingChange;
 
@@ -43,7 +43,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *rareFreqLabel;
 @property (weak, nonatomic) IBOutlet UILabel *commonFreqLabel;
 @property (weak, nonatomic) IBOutlet UILabel *rareCommonRateLabel;
-@property (weak, nonatomic) IBOutlet UILabel *pedalPortLabel;
+@property (weak, nonatomic) IBOutlet UILabel *extTriggerPortLabel;
 @property (weak, nonatomic) IBOutlet UILabel *versionLabel;
 
 /* Sliders actions */
@@ -78,7 +78,7 @@
 @property CGFloat rareCommonRate;
 @property CGFloat beatDurationSeconds;
 @property BOOL useTouchscreenButton;
-@property NSUInteger pedalPort;
+@property NSUInteger extTriggerPort;
 @property BOOL showTriggerInput;
 @property BOOL enableSettingChange;
 

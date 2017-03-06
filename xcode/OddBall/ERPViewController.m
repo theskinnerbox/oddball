@@ -471,7 +471,7 @@ static NSString* kAlertButtonTitle = @"Button disabled";
     self.rareCommonRate = controller.rareCommonRate;
     self.beatDurationSeconds = controller.beatDurationSeconds;
     self.useTouchscreenButton = controller.useTouchscreenButton;
-    self.pedalPort = controller.pedalPort;
+    self.extTriggerPort = controller.extTriggerPort;
     self.showTriggerInput = controller.showTriggerInput;
     
     // Touchscreen button

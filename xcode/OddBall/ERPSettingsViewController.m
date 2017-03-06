@@ -24,7 +24,7 @@ static const int toneSliderResolution = 50;
 @synthesize rareCommonRate;
 @synthesize beatDurationSeconds;
 @synthesize useTouchscreenButton;
-@synthesize pedalPort;
+@synthesize extTriggerPort;
 @synthesize showTriggerInput;
 @synthesize enableSettingChange;
 
@@ -80,8 +80,8 @@ static const int toneSliderResolution = 50;
     self.useTouchscreenButton = self.delegate.useTouchscreenButton;
     [self.screenButtonSwitch setOn:self.useTouchscreenButton animated:YES];
     
-    self.pedalPort = self.delegate.pedalPort;
-    self.pedalPortLabel.text = [NSString stringWithFormat:@"%lu",(unsigned long)self.delegate.pedalPort];
+    self.extTriggerPort = self.delegate.extTriggerPort;
+    self.extTriggerPortLabel.text = [NSString stringWithFormat:@"%lu",(unsigned long)self.delegate.extTriggerPort];
     
     self.showTriggerInput = self.delegate.showTriggerInput;
     [self.triggerSwitch setOn:self.showTriggerInput animated:YES];
